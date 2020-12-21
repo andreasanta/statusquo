@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var statusReport = require('../utils/statusReport');
 
+
 router.post('/status', async function(req, res, next) {
   res.send(await statusReport.issueStatusReport());
 });
