@@ -4,7 +4,7 @@ var _ = require('lodash');
 
 const AUTH_TOKEN_BASE_URI = 'https://staging-authentication.wallstreetdocs.com/oauth/token';
 const CLIENT_ID = 'coding_test';
-const CLIENT_SECRET = 'bwZm5XC6HTlr3fcdzRnD';
+const CLIENT_SECRET = process.env.CLIENT_SECRET || '';
 
 const STATUS_BASE_URI = 'https://staging-gateway.priipcloud.com/api/v2.0/gateway/reports/status/service';
 
